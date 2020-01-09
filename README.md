@@ -3,7 +3,7 @@ Kafka Stream
 Java 1.8
 Kafka 2.4.0
 
-I follow the Kafka stream demo from Kafka website. There are some ticky n order to get it work.
+Follow the Kafka stream demo from Kafka website and it definitely not work. Some ticky in order to get it work !
 
 Follow below steps to start kafka:
 
