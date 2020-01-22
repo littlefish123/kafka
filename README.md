@@ -1,5 +1,5 @@
-Kafka Stream
-============
+Kafka Stream - WordCount
+========================
 Java 1.8
 Kafka 2.4.0
 
@@ -73,3 +73,26 @@ bin/windows/consumer.bat
 Reference
 
 https://kafka.apache.org/24/documentation/streams/quickstart
+
+
+Kafka Producer & Consumer
+=========================
+Java 1.11
+Kafka 2.4.0
+
+1) d:\kafka2.4.0\zoostart.bat
+
+bin/windows/zookeeper-server-start.bat ./config/zookeeper.properties
+
+2) d:\kafka2.4.0\kafka.bat
+
+bin/windows/kafka-server-start.bat config/server.properties
+
+Delete all d:\tmp and d:\kafka2.4.0\logs files before start.
+
+3) bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 100 --topic demo
+
+4) execute ProducerApp
+
+5) execute Customer
+

@@ -1,0 +1,5 @@
+com\test\CustomObject.class
+com\test\ConsumerCreator.class
+com\test\CustomObjectDeserializer.class
+com\test\IkafkaConstants.class
+com\test\Customer.class

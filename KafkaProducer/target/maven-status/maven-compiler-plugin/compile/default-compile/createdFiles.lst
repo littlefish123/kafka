@@ -1,0 +1,6 @@
+com\test\CustomObject.class
+com\test\CustomSerializer.class
+com\test\ProducerCreator.class
+com\test\IkafkaConstants.class
+com\test\CustomPartitioner.class
+com\test\ProducerApp.class
