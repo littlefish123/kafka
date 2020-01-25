@@ -1,3 +1,32 @@
+Kafka - SpringBoot (Send JSON message via Kafka Producer and Consumer)
+======================================================================
+Java 1.11
+SpringBoot 2.2.4
+
+1) d:\kafka2.4.0\zoostart.bat
+
+bin/windows/zookeeper-server-start.bat ./config/zookeeper.properties
+
+# Enable snapshot.trust.empty config if the ZK upgrade from 3.4.X to 3.5.6 is failing
+# with "java.io.IOException: No snapshot found, but there are log entries" error.
+
+change snapshot.trust.empty=true
+
+
+2) d:\kafka2.4.0\kafka.bat
+
+bin/windows/kafka-server-start.bat config/server.properties
+
+3)  d:\kafka2.4.0\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic items-topic
+
+4) run KafkaJSON by SpringApplication
+
+5)
+d:\kafka2.4.0\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic items-topic
+> {"id":1,"name":"Selina","category":"hello"}
+
+
+
 Kafka Stream - WordCount
 ========================
 Java 1.8
