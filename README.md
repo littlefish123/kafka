@@ -9,6 +9,7 @@ SpringBoot 2.2.4
 bin/windows/zookeeper-server-start.bat ./config/zookeeper.properties
 
 //Enable snapshot.trust.empty config if the ZK upgrade from 3.4.X to 3.5.6 is failing
+
 //with "java.io.IOException: No snapshot found, but there are log entries" error.
 
 change snapshot.trust.empty=true
@@ -30,6 +31,7 @@ bin/windows/kafka-server-start.bat config/server.properties
 Kafka Stream - WordCount
 ========================
 Java 1.8
+
 Kafka 2.4.0
 
 Follow the Kafka stream demo from Kafka website and it definitely not work. Some ticky in order to get it work !
@@ -40,8 +42,9 @@ Follow below steps to start kafka:
 
 bin/windows/zookeeper-server-start.bat ./config/zookeeper.properties
 
-# Enable snapshot.trust.empty config if the ZK upgrade from 3.4.X to 3.5.6 is failing
-# with "java.io.IOException: No snapshot found, but there are log entries" error.
+//Enable snapshot.trust.empty config if the ZK upgrade from 3.4.X to 3.5.6 is failing
+
+//with "java.io.IOException: No snapshot found, but there are log entries" error.
 
 change snapshot.trust.empty=true
 
@@ -107,6 +110,7 @@ https://kafka.apache.org/24/documentation/streams/quickstart
 Kafka Producer & Consumer
 =========================
 Java 1.11
+
 Kafka 2.4.0
 
 1) d:\kafka2.4.0\zoostart.bat
