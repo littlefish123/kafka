@@ -40,6 +40,6 @@ public class Item {
 	}
 	
 	public String toString() {
-		return "Item {" + "ID=" + id + "NAME=" + name + "CATEGORY=" + category + "}";
+		return "Item {" + "ID=" + id + " NAME=" + name + " CATEGORY=" + category + "}";
 	}
 }

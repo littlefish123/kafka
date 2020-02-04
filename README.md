@@ -23,9 +23,17 @@ bin/windows/kafka-server-start.bat config/server.properties
 
 4) run KafkaJSON by SpringApplication
 
+
 5) d:\kafka2.4.0\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic items-topic
 > {"id":1,"name":"Selina","category":"hello"}
 
+OR
+
+run KafkaJSONProducer by SpringApplication
+
+Open google browser
+
+Test with http://localhost:8080/producer/say/{"id":1,"name":"richard","category":"selina"}
 
 
 Kafka Stream - WordCount
